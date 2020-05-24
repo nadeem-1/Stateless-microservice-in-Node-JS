@@ -3,8 +3,7 @@ Simple Stateless Microservice
 
 Backend Task
 As we are expanding our capabilities at HackerBay, we have begun to build a multitude of backend microservices to support and simplify our applications.
-
-Your task is to build a simple stateless microservice in Nodejs, with two major functionalities -
+A simple stateless microservice in Nodejs, with two major functionalities -
 
 Authentication
 Image Thumbnail Generation
