@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-hackerbay-microservices/middlewares/middleware.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">node-hackerbay-microservices/middlewares</a> middleware.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">38.24% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>13/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">38.24% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>13/34</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var path = require('path'),
+    jwt= require('jsonwebtoken'),
+    config = require('../config/key'),
+    download = require('image-downloader'),
+    fs = require('fs'),
+    resizeImg = require('resize-img'),
+    LocalStorage = require('node-localstorage').LocalStorage,
+    localStorage = new LocalStorage('./jwtoken');
+&nbsp;
+&nbsp;
+const validity = <span class="fstat-no" title="function not covered" >(r</span>eq,res,next)=&gt;{
+	let token = <span class="cstat-no" title="statement not covered" >localStorage.getItem("jwtoken");</span>
+<span class="cstat-no" title="statement not covered" >  console.log(token);</span>
+<span class="cstat-no" title="statement not covered" >	if(token){</span>
+<span class="cstat-no" title="statement not covered" >		jwt.verify(token,config.secret_Key, <span class="fstat-no" title="function not covered" >fu</span>nction(err, decoded) {</span>
+<span class="cstat-no" title="statement not covered" >			if (err) {</span>
+<span class="cstat-no" title="statement not covered" >				res.render('unauthorized');</span>
+			}
+			else{
+<span class="cstat-no" title="statement not covered" >				next();</span>
+			}
+		});
+	}
+	else{
+<span class="cstat-no" title="statement not covered" >		res.render('unauthorized');</span>
+	}
+&nbsp;
+};
+&nbsp;
+const ThumbnailCreation = <span class="fstat-no" title="function not covered" >(r</span>eq,res,next)=&gt;{
+  //con
+	let url = <span class="cstat-no" title="statement not covered" >req.query.url;</span>
+	let ext = <span class="cstat-no" title="statement not covered" >path.extname(url);</span>
+<span class="cstat-no" title="statement not covered" >  console.log(ext);</span>
+<span class="cstat-no" title="statement not covered" >	if(ext === '.bmp' || ext === '.jpg' || ext ==='.png'){</span>
+		//generate
+		const options = <span class="cstat-no" title="statement not covered" >{</span>
+		 url: url,
+		 dest: './images'
+		};
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		download.image(options)</span>
+		.then(<span class="fstat-no" title="function not covered" >({</span> filename, image }) =&gt; {
+<span class="cstat-no" title="statement not covered" >      console.log(filename);</span>
+<span class="cstat-no" title="statement not covered" >			resizeImg(fs.readFileSync(filename), {width:50, height:50}).then(<span class="fstat-no" title="function not covered" >im</span>g =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        console.log('working 2')</span>
+<span class="cstat-no" title="statement not covered" >				fs.writeFileSync("./thumbnails/"+filename, img);</span>
+<span class="cstat-no" title="statement not covered" >			next();</span>
+		}).catch(<span class="fstat-no" title="function not covered" >(e</span>rr) =&gt; {
+<span class="cstat-no" title="statement not covered" >			res.send(err);</span>
+		});
+&nbsp;
+	})
+	}
+&nbsp;
+	else{
+<span class="cstat-no" title="statement not covered" >		res.send('File extensions allowed- [bmp,png,jpg]');</span>
+	}
+&nbsp;
+};
+&nbsp;
+module.exports.validity = validity;
+module.exports.localStorage=localStorage;
+module.exports.ThumbnailCreation = ThumbnailCreation;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Apr 29 2018 04:03:19 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>
