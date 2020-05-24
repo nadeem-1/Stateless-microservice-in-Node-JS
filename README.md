@@ -1,14 +1,12 @@
 # Microservices
 Simple Stateless Microservice
-docker link :=https://hub.docker.com/r/svm143/node-microservices/
 
 Backend Task
 As we are expanding our capabilities at HackerBay, we have begun to build a multitude of backend microservices to support and simplify our applications.
 
-Your task is to build a simple stateless microservice in Nodejs, with three major functionalities -
+Your task is to build a simple stateless microservice in Nodejs, with two major functionalities -
 
 Authentication
-JSON patching
 Image Thumbnail Generation
 We have no requirements for which frameworks/libraries to use, choose whichever seem best suited for the task!
 
